@@ -16,7 +16,7 @@ async function openPageChaturbate(){
   await selectorInput(page,'input[name="username"]','donjuanc230');
   await selectorInput(page,'input[name="password"]','ju4ncarl05');
   
-  Promise([
+  Promise.all([
     clickInput(page,'input[value="Iniciar sesión"]')
     ]).then(()=>{
       console.log('Haciendo click en la pagina')
